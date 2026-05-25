@@ -9,7 +9,7 @@ const ContentCard = ({ item }) => {
 
   const CardContent = () => (
     <>
-      <img src={item.thumb} alt={item.title} className="card-image" />
+      <img src={item.thumb} alt={item.title} className="card-image" loading="lazy" />
       <div className="card-overlay">
         <div className="card-actions">
           {isRoute ? (

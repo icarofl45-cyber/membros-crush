@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-left">
-        <img src="/logo topo.png" alt="Logo" className="logo-img" />
+        <img src="/logo topo.webp" alt="Logo" className="logo-img" />
       </div>
     </nav>
   );

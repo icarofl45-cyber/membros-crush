@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="hero-container">
       <div className="hero-background">
         <img 
-          src="/logo grande.png" 
+          src="/logo grande.webp" 
           alt="Hero Background" 
         />
         <div className="hero-overlay"></div>
