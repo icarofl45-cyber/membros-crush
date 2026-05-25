@@ -1,0 +1,91 @@
+.content-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.content-card {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+  transform: scale(1.15);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 20, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.content-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-info {
+  margin-top: 0.8rem;
+  padding: 0 0.2rem;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-main);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.pdf-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
