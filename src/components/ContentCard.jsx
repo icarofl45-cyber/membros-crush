@@ -8,31 +8,31 @@ const ContentCard = ({ item }) => {
   const isRoute = item.type === 'route';
 
   const CardContent = () => (
-    <>
+    <div className="content-card" tabIndex="0">
       <img src={item.thumb} alt={item.title} className="card-image" loading="lazy" />
       <div className="card-overlay">
         <div className="card-actions">
           {isRoute ? (
-            <div className="icon-btn" title="Abrir Dashboard">
+            <Link to={item.url} className="icon-btn" title="Abrir Dashboard" style={{ textDecoration: 'none', color: 'white' }}>
               <BarChart2 size={20} />
-            </div>
+            </Link>
           ) : isPdf ? (
             <>
-              <div className="icon-btn" title="Ver PDF">
+              <a href={item.url} target="_blank" rel="noreferrer" className="icon-btn" title="Ver PDF" style={{ textDecoration: 'none', color: 'white' }}>
                 <FileText size={20} />
-              </div>
-              <div className="icon-btn" title="Descargar PDF">
+              </a>
+              <a href={item.url} download target="_blank" rel="noreferrer" className="icon-btn" title="Descargar PDF" style={{ textDecoration: 'none', color: 'white' }}>
                 <Download size={20} />
-              </div>
+              </a>
             </>
           ) : (
-            <div className="icon-btn" title="Ver Video">
+            <a href={item.url} target="_blank" rel="noreferrer" className="icon-btn" title="Ver Video" style={{ textDecoration: 'none', color: 'white' }}>
               <Play size={20} fill="currentColor" />
-            </div>
+            </a>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 
   const CardInfo = () => (
@@ -42,22 +42,9 @@ const ContentCard = ({ item }) => {
     </div>
   );
 
-  if (isRoute) {
-    return (
-      <div className="content-card-container">
-        <Link to={item.url} className="content-card" style={{ textDecoration: 'none', display: 'block' }}>
-          <CardContent />
-        </Link>
-        <CardInfo />
-      </div>
-    );
-  }
-
   return (
     <div className="content-card-container">
-      <a href={item.url} className="content-card" target={isPdf ? '_blank' : '_self'} rel="noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
-        <CardContent />
-      </a>
+      <CardContent />
       <CardInfo />
     </div>
   );
