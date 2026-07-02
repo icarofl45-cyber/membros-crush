@@ -200,8 +200,8 @@ const Dashboard21Days = () => {
           const getColorsByWeek = (w) => {
             if (w === 1) return { main: '#3b82f6', light: 'rgba(59, 130, 246, 0.2)' }; // Azul
             if (w === 2) return { main: '#f59e0b', light: 'rgba(245, 158, 11, 0.2)' }; // Laranja
-            if (w === 3) return { main: '#10b981', light: 'rgba(16, 185, 129, 0.2)' }; // Verde
-            return { main: '#8b5cf6', light: 'rgba(139, 92, 246, 0.2)' };
+            if (w === 3) return { main: '#a3e635', light: 'rgba(163, 230, 53, 0.2)' }; // Verde Lima
+            return { main: '#a3e635', light: 'rgba(163, 230, 53, 0.2)' };
           };
 
           const colors = getColorsByWeek(week);
@@ -249,7 +249,7 @@ const Dashboard21Days = () => {
                             onClick={() => toggleHabit(week, day, habit.id)}
                             title={`Día ${day}`}
                           >
-                            {isChecked && <Check size={14} strokeWidth={4} color="#10b981" />}
+                            {isChecked && <Check size={14} strokeWidth={4} color="#a3e635" />}
                             {isMissed && <X size={14} strokeWidth={4} color="#ef4444" />}
                           </button>
                         );

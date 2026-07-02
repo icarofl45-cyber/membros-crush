@@ -2,10 +2,10 @@
 
 :root {
   /* Colors */
-  --color-bg-primary: #121214;
-  --color-bg-secondary: #1a1a1e;
-  --color-primary: #8b5cf6; /* Purple */
-  --color-primary-hover: #7c3aed;
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #1a1a1a;
+  --color-primary: #a3e635; /* Lime green */
+  --color-primary-hover: #84cc16;
   --color-text-main: #f8fafc;
   --color-text-muted: #94a3b8;
   
@@ -25,6 +25,8 @@
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--color-bg-primary);
+  background-image: radial-gradient(circle at center center, #222 0%, #000 100%);
+  background-attachment: fixed;
   color: var(--color-text-main);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

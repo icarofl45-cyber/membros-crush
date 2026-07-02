@@ -92,8 +92,8 @@
 
 .rank-card.achieved {
   opacity: 1;
-  border-color: #555;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(163, 230, 53, 0.2);
 }
 
 .rank-day {
@@ -123,9 +123,9 @@
 }
 
 .rank-badge.green {
-  background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.5);
+  background: rgba(163, 230, 53, 0.2);
+  color: #a3e635;
+  border: 1px solid rgba(163, 230, 53, 0.5);
 }
 
 .weeks-container {
@@ -152,7 +152,7 @@
 .lock-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(18, 18, 20, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@
 }
 
 .week-subtitle {
-  color: #10b981;
+  color: var(--color-primary);
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -239,8 +239,8 @@
 }
 
 .habit-checkbox.checked {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: #10b981;
+  background: rgba(163, 230, 53, 0.15);
+  border-color: var(--color-primary);
 }
 
 .habit-checkbox.missed {
@@ -271,7 +271,7 @@
 .performance-value {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #10b981;
+  color: var(--color-primary);
 }
 
 .chart-wrapper {
@@ -292,7 +292,7 @@
 }
 
 .tooltip-score {
-  color: #10b981;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
