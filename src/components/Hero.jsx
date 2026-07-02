@@ -14,13 +14,6 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <div className="hero-background">
-        <img 
-          src="/logo grande.webp" 
-          alt="Hero Background" 
-        />
-        <div className="hero-overlay"></div>
-      </div>
       <div className="hero-content">
         <div className="hero-actions">
           <button onClick={() => scrollTo('row-hombres')} className="hero-btn">
